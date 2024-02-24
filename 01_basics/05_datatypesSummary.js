@@ -31,3 +31,34 @@ console.log('-----------------------');
 console.log(typeof Array);
 console.log(typeof myFun);
 console.log(typeof start);
+
+// -------------------------------
+// memories
+// stack(primitive) heap(non-primitive)
+
+let fruits='apples'
+let anotherfruit=fruits
+anotherfruit='oranges'
+
+console.log(fruits);
+console.log(anotherfruit);
+
+let brands=['fenty','rare','rhode']
+
+let anotherbrand=brands
+
+anotherbrand.push('rem')
+console.log(brands);
+console.log(anotherbrand);
+
+
+let userOne={
+    email:'user@gmail.com',
+    upi:"df@oksbi"
+}
+let userTwo=userOne
+
+userTwo.email='new@gmail.com'
+
+console.log(userOne.email);
+console.log(userTwo.email);
